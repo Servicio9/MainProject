@@ -1,0 +1,22 @@
+body{
+    padding-top: 50px;
+}
+
+.nav-color{
+    background-color: rgb(14, 46, 150);
+}
+
+.fa-paper-plane{
+    color: gold;
+}
+
+.jumbotron{
+    padding:100px 30px 70px 30px;
+    margin:0px auto;
+    background: #7375f5 ;
+    color:rgb(255, 255, 255);
+}
+
+.color-gold{
+    color: gold;
+}
