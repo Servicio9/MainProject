@@ -1,8 +1,15 @@
 body{
     padding-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+
+}
+p::selection,blockquote::selection,h3::selection{
+    background:#203b96 ;
+    color: white;
 }
 
-.nav-color{
+.nav-color{ 
     background-color:#203b96;
 }
 
@@ -13,14 +20,64 @@ body{
 .jumbotron{
     padding:100px 30px 70px 30px;
     margin:0px auto;
-    background: linear-gradient(30deg, #5eeeee , #ff9797);
+    background: linear-gradient(30deg,#5eeeee,#ff97979d);
     color:rgb(255, 255, 255);
 }
 
+
 .color-gold{
     color: gold !important;
+}
+.color-nav{
+    color:#203b96;
+}
+
+.nav-forecolor{
+    color:#203b96;
+}
+
+.color-silver{
+    color: rgb(250, 245, 245);
 }
 
 .ml-20{
     margin-left: 20px;
 }
+
+.img-fluid{
+    height: 376px;
+}
+
+.colored-bg{
+    padding: 100px 60px 60px 60px;
+    background-color: #ECFAFC;
+}
+.colored-bg-dark{
+    background-color: #203b96c4;
+}
+
+.cardd{
+    padding: 50px 20px 20px 20px;
+}
+
+.smallImg{
+    max-width: 300px;
+}
+
+.rounded{
+    border-radius: 50% !important; 
+}
+
+.color-white{
+    color: white;
+}
+
+.carousel-caption h5, .carousel-caption p{
+    background-color: rgba(0, 0, 0, 0.644);
+    box-shadow: black 10px 10px 20px;
+}
+
+.carousel-item img{
+    min-height: 380px;
+}
+
