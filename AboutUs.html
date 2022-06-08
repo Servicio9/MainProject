@@ -18,24 +18,24 @@
     <nav class="navbar navbar-dark nav-color navbar-expand-sm fixed-top">
         <div class="container">
             <a href="index.html" class="navbar-brand color-gold">
+
+                <!-- <img src="Images/Servicio without Home.png" alt="logo" width="40" height="50"> -->
                <b style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;"> <i class="fa fa-paper-plane"></i> Servicio </b>
-                <!-- <img src="Images/logo.png" alt="logo" width="50" height="50"> -->
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="index.html" class="nav-link"><i class="fa fa-home"></i> Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-phone"></i> Contact Us</a></li>
-                    <li class="nav-item active"><a href="#" class="nav-link"><i class="fa fa-address-card"></i> About Us</a></li>
-                    <li class="nav-item color-gold ml-20"><a href="SignUp.html" class="nav-link color-gold"><i class="fa fa-user fa-lg color-gold"></i> Login</a></li>
+                    <li class="nav-item "><a href="index.html" class="nav-link"><i class="fa fa-home"></i> Home</a></li>
+                    <li class="nav-item"><a href="ContactUs.html" class="nav-link"><i class="fa fa-phone"></i> Contact Us</a></li>
+                    <li class="nav-item active"><a href="AboutUs.html" class="nav-link"><i class="fa fa-address-card"></i> About Us</a></li>
+                    <li class="nav-item color-gold ml-20"><a data-toggle="modal" href="" title="Or SignUp" class="nav-link color-gold"><i class="fa fa-user fa-lg color-gold"></i> Login</a></li>
                     
                 </ul>
             </div>
         </div>
-    </nav>
-
+    </nav>   
     <div class="Header">
         <div class="row colored-bg">
             <div class="col-12 col-sm-8 offset-sm-2 d-flex justify-content-center">
@@ -45,7 +45,7 @@
                 <h3 class="text-center">We are all very different. We were born in different cities, at different times, we love different music, food, movies. But we have something that unites us all. It is our company. We are its heart. We are not just a team, we are a <em><b>Family</b></em></h3>
             </div>
             <div class="col-12 d-flex justify-content-center">
-                <button role="button" class="btn btn-primary">Contact Us</button>
+                <button role="button" class="btn btn-primary" onclick="window.location.href = '/ContactUs.html'">Contact Us</button>
             </div>
         </div>
     </div>
@@ -86,35 +86,35 @@
                 <img src="Images/Umar.jpeg" class="d-flex w-100 rounded" alt="Umar Farooq" >
                 <div class="carousel-caption d-flex justify-content-center flex-column">
                     <h5 class="color-gold">Umar Farooq</h5>
-                    <p>CEO</p>
+                    <p class="focused">CEO</p>
                   </div>
               </div>
               <div class="carousel-item">
                 <img src="Images/Granny.jpeg" class="d-flex w-100 rounded" alt="Snober Gulnaz">
                 <div class="carousel-caption d-flex justify-content-center flex-column">
                     <h5 class="color-gold">Snober Gulnaz</h5>
-                    <p>CMO</p>
+                    <p class="focused">CMO</p>
                   </div>
               </div>
               <div class="carousel-item">
                 <img src="Images/Faisal.jpeg" class="d-block w-100 rounded" alt="Faisal Ismail">
                 <div class="carousel-caption d-flex justify-content-center flex-column">
                     <h5 class="color-gold">Faisal Ismail</h5>
-                    <p>CTO</p>
+                    <p class="focused">CTO</p>
                   </div>
               </div>
               <div class="carousel-item">
                 <img src="Images/Waqas.jpeg" class="d-block w-100 rounded" alt="Muhammad Waqas">
                 <div class="carousel-caption d-flex justify-content-center flex-column">
                     <h5 class="color-gold">Muhammad Waqas</h5>
-                    <p>CMO</p>
+                    <p class="focused">CMO</p>
                   </div>
               </div>
               <div class="carousel-item">
                 <img src="Images/Younis.jpeg" class="d-block w-100 rounded" alt="Muhammad Younis">
                 <div class="carousel-caption d-flex justify-content-center flex-column">
                     <h5 class="color-gold">Muhammad Younis</h5>
-                    <p>CFO</p>
+                    <p  class="focused">CFO</p>
                   </div>
               </div>
             </div>
@@ -156,7 +156,9 @@
                     </div>
                     <div class="card-body">
                         <p class="">
-                            Servicio focus on covering the local services sector to ensure and provide best services in best rates by just tapping on the screen. 
+                            Servicio focus on covering the local services sector to ensure and provide best services in best rates by just tapping on the screen. Servicio is evolving the way the world moves. By seamlessly connecting service providers to customers through our apps, 
+                            we open up more possibilities for customers and more business for a service provider. 
+                            we have given them a platform for customers and service providers
                         </p>
                     </div>
                 </div>
@@ -166,12 +168,65 @@
                     </div>
                     <div class="card-body">
                         <p class="">
-                            Servicio focus on covering the local services sector to ensure and provide best services in best rates by just tapping on the screen. 
+                            To be Pakistan's most customer-centric company, where customers can find and repair anything they might want to do online,
+                            and endeavors to offer its customers the lowest possible prices..
                         </p>
                     </div>
                 </div>
             </div>
     </div>
+
+    <footer class="page-footer font-small pt-4">
+        <div class="row">
+            <div class="col-6 col-sm-2 text-center color-gold">
+                <h4>Services</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="color-silver hover-gold">AC Service</a></li>
+                    <li><a href="#" class="color-silver hover-gold">Car Service</a></li>
+                    <li><a href="#" class="color-silver hover-gold">Carpenter Service</a></li>
+                    <li><a href="#" class="color-silver hover-gold">Electrician Service</a></li>
+                    <li><a href="#" class="color-silver hover-gold">Plumbing Service</a></li>
+                    <li><a href="#" class="color-silver hover-gold">Computer Service</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-sm-2 text-center color-gold">
+                <h4>Available in</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="color-silver hover-gold">D.G.Khan</a></li>
+                    <li><a href="#" class="color-silver hover-gold">Kot Addu</a></li>
+                    <li><a href="#" class="color-silver hover-gold">Mana Ahmdani</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-sm-2 text-center color-gold">
+                <h4>Main Menu</h4>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="color-silver hover-gold">Home</a></li>
+                    <li><a href="ContactUs.html" class="color-silver hover-gold">Contact Us</a></li>
+                    <li><a href="AboutUs.html" class="color-silver hover-gold">About Us</a></li>
+                    <li><a href="#" class="color-silver hover-gold">Become Service Provider</a></li>
+                    <li><a href="#" class="color-silver hover-gold">Blogs</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-sm-2 text-center color-gold">
+                <h4>Connect With Us</h4>
+                <ul class="list-unstyled">
+                    <li><a href="tel:+923156757381" class="btn btn-social-icon btn-primary color-silver hover-gold"><span class="fa fa-phone"></span></a></li>
+                    <li><a href="#" class="btn btn-social-icon btn-facebook"><span class="fa fa-facebook"></span></a></li>
+                    <li><a href="#" class="btn btn-social-icon btn-pinterest"><span class="fa fa-instagram"></span></a></li>
+                    <li><a href="#" class="btn btn-social-icon btn-twitter"><span class="fa fa-twitter"></span></a></li>
+                    <li><a href="#" class="btn btn-social-icon btn-google"><span class="fa fa-envelope-o"></span></a></li>
+                        
+                </ul>
+            </div>
+            <div class="col-12 col-sm-3 text-center color-gold">
+                <h4>Office Address</h4>
+                <h5 class="color-silver"><strong> Main Office: </strong> Incubation Center, Ghazi University, Dera Ghazi Khan, Punjab, Pakistan</h5>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3 colored-bg-light">
+            <h5 class="color-silver">© 2022 Copyright: Servicio</h5>
+          </div>
+    </footer>
 
     <script>
         $(document).ready(function(){

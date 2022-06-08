@@ -17,11 +17,16 @@ p::selection,blockquote::selection,h3::selection{
     color: gold;
 }
 
+
 .jumbotron{
-    padding:100px 30px 70px 30px;
+    padding:10px 50px 0px 30px;
     margin:0px auto;
-    background: linear-gradient(30deg,#5eeeee,#ff97979d);
-    color:rgb(255, 255, 255);
+    background: transparent;
+    
+}
+.MultiColor{
+    background: linear-gradient(30deg,#5eeeee,#ff97979d) !important;
+    color:rgb(255, 255, 255) !important;
 }
 
 
@@ -55,6 +60,10 @@ p::selection,blockquote::selection,h3::selection{
 .colored-bg-dark{
     background-color: #203b96c4;
 }
+.colored-bg-light{
+    background-color: #274fd4c4;
+}
+
 
 .cardd{
     padding: 50px 20px 20px 20px;
@@ -72,12 +81,35 @@ p::selection,blockquote::selection,h3::selection{
     color: white;
 }
 
-.carousel-caption h5, .carousel-caption p{
+.carousel-caption h5, .focused{
     background-color: rgba(0, 0, 0, 0.644);
     box-shadow: black 10px 10px 20px;
 }
 
 .carousel-item img{
     min-height: 380px;
+    
 }
 
+#MainCarousel{
+    padding: 20px 20px 20px 50px;
+}
+
+.setToCenter{
+    margin-top: -250px;
+
+}
+
+.color-black{
+    color: black;
+}
+
+.page-footer{
+    background-color: #203b96;
+    min-height: 300px;
+    
+}
+
+.hover-gold:hover{
+    color: gold;
+}
