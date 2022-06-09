@@ -113,3 +113,8 @@ p::selection,blockquote::selection,h3::selection{
 .hover-gold:hover{
     color: gold;
 }
+
+.bg-shadow{
+    background-color: rgba(0, 0, 0, 0.774);
+    box-shadow: black 15px 15px 20px;
+}
