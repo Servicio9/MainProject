@@ -4,39 +4,47 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"> 
     <link rel="stylesheet" href="style.css">
 
     <title>Servicio - Services You Need</title>
 </head>
 <body>
-
-
-     <nav class="navbar navbar-dark nav-color navbar-expand-sm fixed-top">
+     <nav class="navbar navbar-dark nav-color navbar-expand-sm fixed-top" style="width: 100%;">
         <div class="container">
             <a href="index.html" class="navbar-brand color-gold">
-
                <b style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;"> <i class="fa fa-paper-plane"></i> Servicio </b>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="fa fa-bars"></span>
               </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active"><a href="index.html" class="nav-link"><i class="fa fa-home"></i> Home</a></li>
                     <li class="nav-item"><a href="ContactUs.html" class="nav-link"><i class="fa fa-phone"></i> Contact Us</a></li>
                     <li class="nav-item"><a href="AboutUs.html" class="nav-link"><i class="fa fa-address-card"></i> About Us</a></li>
-                    <li class="nav-item color-gold ml-20"><a  href="Login.html" class="nav-link color-gold"><i class="fa fa-sign-in fa-lg color-gold"></i> Login</a></li>
-                    
+                    <li class="d-block d-sm-none nav-item color-gold ml-20"><a  data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom" role="button" class="btn nav-link color-gold"><i class="fa fa-tel fa-lg color-gold"></i> Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>   
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header  border-bottom-gold">
+          <h5 class="offcanvas-title" id="offcanvasBottomLabel">Connect Us Via</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+          <div class="container">
+            <div class="btn-group" role="group">      
+                <a class="btn" href="tel:+923156757381"><img src="Images/Logo/call logo.png" alt="Call Logo" width="35px" height="42px"><h6> Call </h6></a>
+                <a class="btn" href="https://wa.me/+923156757381"><img src="Images/Logo/whatsapp logo.png" alt="Whatsapp Logo" width="35px" height="42px"><h6> Whatsapp </h6></a>
+                <a class="btn" href="mailto:muhammad.umar2872@gmail.com"><img src="Images/Logo/mail logo.png" alt="Mail Logo" width="35px" height="42px"><h6> Email </h6></a>  
+            </div>
+          </div>
+        </div>
+      </div>
     <div class="MultiColor">
         <header class="jumbotron">
             <div class="container">
@@ -54,7 +62,7 @@
             </div>
         </header>
 
-        <div id="MainCarousel" class="carousel slide" data-ride="carousel">
+        <div id="MainCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
                     <img class="d-block img-fluid col-11 col-sm-4" src="Images/Posts/Servicio main.png" alt="Our Services">
@@ -141,49 +149,103 @@
             </a>
         </div>
     </div> 
-
     <div class="colored-bg">
-        <h3 class="text-center pb-5 color-nav">Simple Steps to Book Your Service</h3>
+        <h3 class="text-center pb-5 color-nav">Simple <strong>Steps</strong> to Book Your Service</h3>
         <div class="container">
-            <div class="steps-form-2 col-12 col-sm-6 offset-sm-3">
-                <div class="steps-row-2 setup-panel-2 d-flex justify-content-between">
-                    <div class="steps-step-1">
-                        <a href="#step-1" type="button" class="btn btn-amber btn-circle waves-effect ml-0" data-toggle="tooltip" data-placement="top" title="Select Your Service"><i class="fa fa-list-alt fa-3x" aria-hidden="true"></i></a>
-                        <h4 class="text-center color-nav">Services</h4>
+            <div class="steps-form-2 row">
+                <div class="steps-row-2 setup-panel-2 d-flex justify-content-between col-12">
+                    <div class="steps-step-1 col-3">
+                        <a href="#step-1" type="button" class="btn btn-amber btn-circle waves-effect d-block justify-content-center" data-toggle="tooltip" data-placement="top" title="Select Your Service"><i class="fa fa-list-alt fa-2x" aria-hidden="true"></i></a>
+                        <h5 class="text-center color-nav">Select Service</h5>
                     </div>
-                    <div class="steps-step-2">
-                        <a href="#step-2" type="button" class="btn btn-blue-grey btn-circle waves-effect" data-toggle="tooltip" data-placement="top" title="Choose Service Provider You Want"><i class="fa fa-check fa-3x" aria-hidden="true"></i></a>
-                        <h4 class="text-center color-nav">Book</h4>
+                    <div class="steps-step-2 col-3">
+                        <a href="#step-2" type="button" class="btn btn-blue-grey btn-circle waves-effect d-block justify-content-center" data-toggle="tooltip" data-placement="top" title="Choose Service Provider You Want"><i class="fa fa-check fa-2x" aria-hidden="true"></i></a>
+                        <h5 class="text-center color-nav">Make Booking</h5>
                     </div>
-                    <div class="steps-step-3">
-                        <a href="#step-3" type="button" class="btn btn-blue-grey btn-circle waves-effect" data-toggle="tooltip" data-placement="top" title="Relax "><i class="fa fa-bed fa-3x" aria-hidden="true"></i></a>
-                        <h4 class="text-center color-nav">Relax</h4>
+                    <div class="steps-step-3 col-3">
+                        <a href="#step-3" type="button" class="btn btn-blue-grey btn-circle waves-effect d-block justify-content-center" data-toggle="tooltip" data-placement="top" title="Relax "><i class="fa fa-bed fa-2x" aria-hidden="true"></i></a>
+                        <h5 class="text-center color-nav">Stay Relax</h5>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!--  Posts go there in form of cards, come from Database,  -->
-    <div class="colored-bg py-5">
+    <div class="bg-white py-5">
         <div class="container">
-            <h3 class="text-center pb-5 color-nav">Offered services</h3>
-            <div class="row col-12 col-sm-4">
-                <div class="card">
+            <h3 class="text-center pb-5 color-nav">Offered Categories</h3>
+            <div class="row justify-content-between">
+                <div class="card col-12 col-md-4 my-4">
                      <div class="card card-header bg-dark text-center color-gold">
                          <h2>Photography</h2>
                      </div>
                      <div class="card-body">
-                        <img src="Images/Umar FArooq.jpg" alt="Umar Farooq" height="200px" width="100%">
+                        <img src="Images/Posts/photography.jpg" alt="Photography" height="200px" width="100%" style="margin: 0;">
                          <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sequi quidem placeat nihil dolores, reprehenderit tenetur debitis? Amet sunt, consectetur asperiores tempora labore deserunt mollitia, non aspernatur iusto nesciunt repellendus?</p>
+                        <button class="btn btn-primary" role="button" style="width: 100%;">See More</button>
                      </div>
+                </div>
+                <div class="card col-12 col-md-4 my-4">
+                    <div class="card card-header bg-dark text-center color-gold">
+                        <h2>Computer Repairing</h2>
+                    </div>
+                    <div class="card-body">
+                       <img src="Images/Posts/Computer Services.png" alt="Computer Services" height="200px" width="100%" style="margin: 0;">
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sequi quidem placeat nihil dolores, reprehenderit tenetur debitis? Amet sunt, consectetur asperiores tempora labore deserunt mollitia, non aspernatur iusto nesciunt repellendus?</p>
+                       <button class="btn btn-primary" role="button" style="width: 100%;">See More</button>
+                    </div>
+                </div>
+               <div class="card col-12 col-md-4 my-4">
+                    <div class="card card-header bg-dark text-center color-gold">
+                        <h2>A.C Services</h2>
+                    </div>
+                    <div class="card-body">
+                    <img src="Images/Posts/ac rep...jpg" alt="A.C Services" height="200px" width="100%" style="margin: 0;">
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sequi quidem placeat nihil dolores, reprehenderit tenetur debitis? Amet sunt, consectetur asperiores tempora labore deserunt mollitia, non aspernatur iusto nesciunt repellendus?</p>
+                    <button class="btn btn-primary" role="button" style="width: 100%;">See More</button>
+                    </div>
+                </div>
+           </div>
+            <!--Row 2-->
+           <div class="row justify-content-between">
+                <div class="card col-12 col-md-4 my-4">
+                    <div class="card card-header bg-dark text-center color-gold">
+                        <h2>Carpentery</h2>
+                    </div>
+                    <div class="card-body">
+                        <img src="Images/Posts/carpenter.jpg" alt="Carpenter" height="200px" width="100%" style="margin: 0;">
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sequi quidem placeat nihil dolores, reprehenderit tenetur debitis? Amet sunt, consectetur asperiores tempora labore deserunt mollitia, non aspernatur iusto nesciunt repellendus?</p>
+                        <button class="btn btn-primary" role="button" style="width: 100%;">See More</button>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-4 my-4">
+                    <div class="card card-header bg-dark text-center color-gold">
+                        <h2>Plumbering</h2>
+                    </div>
+                    <div class="card-body">
+                    <img src="Images/Posts/plumber2.jpg" alt="Plumbering Services" height="200px" width="100%" style="margin: 0;">
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sequi quidem placeat nihil dolores, reprehenderit tenetur debitis? Amet sunt, consectetur asperiores tempora labore deserunt mollitia, non aspernatur iusto nesciunt repellendus?</p>
+                        <button class="btn btn-primary" role="button" style="width: 100%;">See More</button>
+                    </div>
+                </div>
+                <div class="card col-12 col-md-4 my-4">
+                    <div class="card card-header bg-dark text-center color-gold">
+                        <h2>Electrician</h2>
+                    </div>
+                    <div class="card-body">
+                        <img src="Images/Posts/Electrition Servies.png" alt="Electrician Services" height="200px" width="100%" style="margin: 0;">
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sequi quidem placeat nihil dolores, reprehenderit tenetur debitis? Amet sunt, consectetur asperiores tempora labore deserunt mollitia, non aspernatur iusto nesciunt repellendus?</p>
+                        <button class="btn btn-primary" role="button" style="width: 100%;">See More</button>
+                    </div>
                 </div>
             </div>   
         </div>
     </div>
+        
+       
 
 
-
-    <footer class="page-footer font-small py-5">
+    <footer class="page-footer font-small pt-5">
         <div class="row">
             <div class="col-6 col-sm-2 text-center color-gold">
                 <h4>Services</h4>
@@ -235,10 +297,10 @@
           </div>
     </footer>
     
-<script>
-    $(document).ready(function(){
-    $('#MainCarousel').carousel({interval:2300});
-    });
-</script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
